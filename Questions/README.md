@@ -26,7 +26,7 @@ False/True Questions
 
 ## Method 3
 False/True Questions
- Se eliminó la variable “uaddr”.
+ * Se eliminó la variable “uaddr”.
  * Se eliminó la variable “usize”.
  * Se agregó la variable “nr_pages”.
  * Se eliminó la variable “off”.
