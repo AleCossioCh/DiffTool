@@ -2,50 +2,50 @@
 
 ## Method 1
 False/True Questions
- * La función “nvm_remove_tgt” ha cambiado su tipo de retorno.
- * Se agregó un nuevo argumento a la función nvm_remove_tgt. 
- * Se modificó el tipo de la variable “dev”.
- * Se eliminó la variable “nvm_dev *dev”.
- * La llamada al método “mutex_unlock” fue eliminada.
- * Se eliminó la instrucción “return 1” dentro de la condición “if(!t)”.
- * Se agregó la llamada al método “kref_put”.
- * Se eliminó la asignación de la variable “t = nvm_find_target(dev, remove->tgtname)”.
- * Se agregó la llamada al método “down_read(&nvm_lock)”.
+ * The function "nvm_remove_tgt" has changed its return type.
+ * A new argument was added to the "nvm_remove_tgt" function.
+ * The type of the variable "dev" was changed.
+ * The variable "nvm_dev *dev" was deleted.
+ * The call to the method "mutex_unlock" was removed.
+ * The "return 1" instruction inside the "if(!t)" condition was removed.
+ * Added call to method "kref_put".
+ * The assignment of the variable "t = nvm_find_target(dev, remove->tgtname)" was removed.
+ * Added call to method "down_read(&nvm_lock)".
 ## Method 2
 False/True Questions
- * Se eliminó la declaración de la variable “i”.
- * Cambió la asignación de la variable “count”.
- * Se eliminó la variable “user_count”.
- * Se eliminó la variable “uaddr”.
- * Se agregó un nueva condicional “if(user_count < 0)”.
- * Se eliminó “return -ENXIO” dentro de la condicional “if(end>count)”.
- * Se agregó un ciclo “for(i=offset; i<end; i++)”.
- * Se modificó el valor que de retorno del metodo “rockchip_drm_gem_object_mmap_iommu”.
- * Se eliminó el retorno “ret” dentro de la condicional “if(ret)”.
- * Se agregó la variable “offset”.
+ * The declaration of the variable "i" was deleted.
+ * Changed the assignment of the variable "count".
+ * The variable "user_count" was deleted.
+ * The variable "uaddr" was deleted.
+ * The conditional "if(user_count < 0)" was added.
+ * The “return -ENXIO” instruction inside the “if(end>count)” condition was removed.
+ * The cycle "for(i=offset; i<end; i++)" was added.
+ * The return value of the method "rockchip_drm_gem_object_mmap_iommu" has been modified.
+ * The return "ret" inside the conditional "if(ret)" was deleted.
+ * The variable "offset" was added.
 
 ## Method 3
 False/True Questions
- * Se eliminó la variable “uaddr”.
- * Se eliminó la variable “usize”.
- * Se agregó la variable “nr_pages”.
- * Se eliminó la variable “off”.
- * Se agregó un nueva condicional “if(!pages)”.
- * Se modificó la función lógica “| |” por “&&”.
- * Se agregó el ciclo “do{ }while(usize > 0)”.
- * Se modificó el valor retornado del método “_arm_iommu_nmap_attrs”.
- * Se agregó la condicional “if(err)”.
- * Se eliminó la declaracion “usize”.
+ * The variable "uaddr" was deleted.
+ * The variable "usize" was deleted.
+ * The variable "nr_pages" was added.
+ * The "off" variable was removed.
+ * The conditional "if(!pages)" was added.
+ * The logic function "| |" was changed to "&&".
+ * The cycle "do{ }while(usize > 0)" was added.
+ * The returned value of the method "_arm_iommu_nmap_attrs" was modified.
+ * The conditional "if(err)" was added.
+ * The "usize" statement was deleted.
 
 ## Method 4
 False/True Questions
- * Se eliminó la variable “start_pfn”.
- * Se eliminó la variable “nid” en la llamada al metodo “_add_pages”.
- * Se agregó la variable “nr_pages” en la llamada al metodo “_add_pages”
- * Se agregó el argumento “want_memblock” en la declaración del método “arch_add_memory(...)”
- * Se agregó el argumento “restrictions” a la llamada del método “_add_pages”.
- * La instrucción de retorno del método “arch_add_memory” fue modificado.
- * Se agregó la variable “nr_pages”.
- * Se eliminó la declaración de la variable “start_pfn”.
- * Se eliminó la variable “altmap” al llamar a la función “_add_pages”
- * Se agregó un nueva condicional “if(!want_memblock)”.
+ * The variable "start_pfn" was deleted.
+ * The variable "nid" in the method call "_add_pages" was removed.
+ * The variable "nr_pages" in the method call "_add_pages" was added.
+ * The argument "want_memblock" was added to the method statement "arch_add_memory(...)".
+ * The "restrictions" argument was added to the method call "_add_pages".
+ * The return instruction of the method "arch_add_memory" was modified.
+ * The variable "nr_pages" was added.
+ * The declaration of the variable "start_pfn" was deleted.
+ * The variable "altmap" was removed when calling the function "_add_pages".
+ * The conditional "if(!want_memblock)" was added.
